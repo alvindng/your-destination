@@ -17,3 +17,9 @@ color: rgba(87, 100, 105, 0.8);
   font-size: 25pt;
   color: rgba(87, 100, 105, 0.8);
 }
+
+img {
+  display: none;
+  max-width: 500px;
+  margin-bottom: 50px;
+}

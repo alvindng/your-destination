@@ -10,34 +10,44 @@ $('form').submit(function(event){
     var result = q1 + q2 + q3 + q4;
 
     if (result >= -8 && result <= -4){
-      $(".destination").text("Brazil")
+      $(".destination").text("Paris");
+      $(".name").text(nameInput);
+      $("#results").show();
+      $(".location").text("Paris!");
+      $("#paris").show();
+    }
+
+    else if (result > -4 && result < 0){
+      $(".destination").text("Brazil");
       $(".name").text(nameInput);
       $("#results").show();
       $(".location").text("Brazil!");
+      $("#brazil").show();
+    }
 
-    }
-    else if (result > -4 && result < 0){
-      $(".destination").text("South Korea")
-      $(".name").text(nameInput);
-      $("#results").show();
-      $(".location").text("South Korea!");
-    }
     else if (result === 0){
-      $(".destination").text("Chicago")
+      $(".destination").text("Austria");
       $(".name").text(nameInput);
       $("#results").show();
-      $(".location").text("Chicago!");
+      $(".location").text("Austria!");
+      $("#austria").show();
     }
+
     else if (result >0 && result <= 4){
-      $(".destination").text("Barcelona")
+      $(".destination").text("Barcelona");
       $(".name").text(nameInput);
       $("#results").show();
       $(".location").text("Barcelona!");
+      $("#barcelona").show();
     }
+
     else if (result >4 && result <= 8) {
-      $(".destination").text("Hong Kong")
+      $(".destination").text("Tokyo");
       $(".name").text(nameInput);
       $("#results").show();
-      $(".location").text("Hong Kong!");
+      $(".location").text("Tokyo!");
+      $("#tokyo").show();
     }
+    // $("modal").hide();
+
   });
