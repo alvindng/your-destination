@@ -11,154 +11,186 @@
 </head>
 <body>
   <div class="container">
+    <div class="jumbotron">
 
     <h1>Destination Finder</h1>
-    <p>Find your next vacation spot by taking the survey. Click the button below to get started.</p>
+    <p>Find your next vacation spot by taking my survey. Click the button below to get started.</p>
     <button class="btn btn-success btn-lrg" type="button" name="button" data-target="#myModal1" data-toggle="modal">Get Started</button>
+  </div>
+
     <form>
 
-    <div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Name</p>
+      <div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <label id="name" for="name">Enter Your Name:</label>
+              <input type="text" name="name" placeholder="Jane/John Smith">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target="#myModal2">Next</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <p>How important is cost when planning a vacation?</p>
+              <select class="form-control" id="beverage">
+                <option value="1">Extremely Important</option>
+                <option value="2">Very Important</option>
+                <option value="3">Moderately Important</option>
+                <option value="4">Slightly Important</option>
+                <option value="5">Not at all Important</option>
+              </select>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Previous</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Next</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="myModal3" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <p>How important is safety when planning a vacation?</p>
+              <select class="form-control" id="beverage">
+                <option value="1">Extremely Important</option>
+                <option value="2">Very Important</option>
+                <option value="3">Moderately Important</option>
+                <option value="4">Slightly Important</option>
+                <option value="5">Not at all Important</option>
+              </select>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Previous</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Next</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="myModal4" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <p>How important is food selection when planning a vacation?</p>
+              <select class="form-control" id="beverage">
+                <option value="1">Extremely Important</option>
+                <option value="2">Very Important</option>
+                <option value="3">Moderately Important</option>
+                <option value="4">Slightly Important</option>
+                <option value="5">Not at all Important</option>
+              </select>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Previous</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5" data-dismiss="modal">Next</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="myModal5" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <div class="radio">
+                <p>How important are activities when planning a vacation?</p>
+                <select class="form-control" id="beverage">
+                  <option value="1">Extremely Important</option>
+                  <option value="2">Very Important</option>
+                  <option value="3">Moderately Important</option>
+                  <option value="4">Slightly Important</option>
+                  <option value="5">Not at all Important</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Previous</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" data-dismiss="modal">Next</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div id="myModal6" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Find Your Dream Vacation</h4>
+            </div>
+            <div class="modal-body">
+              <p>Do you have a passport?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="passport" value="yes" checked>
+                  Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="passport" value="no">
+                  No
+                </label>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal5" data-dismiss="modal">Previous</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 
 
 
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target="#myModal2">Next</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Question 1</p>
+    </form>
 
 
-            
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Next</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="myModal3" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Question 2</p>
-
-
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Next</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="myModal4" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Question 3</p>
-
-
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5" data-dismiss="modal">Next</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="myModal5" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Question 4</p>
-
-
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Previous</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" data-dismiss="modal">Next</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="myModal6" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Find Your Dream Vacation</h4>
-          </div>
-          <div class="modal-body">
-            <p>Question 5</p>
-
-
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal5" data-dismiss="modal">Previous</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-
-
-  </form>
-
-
-
-
-
-
-
+    <div id="results">
+      <h1>Your Destination:</h1>
+      <p>One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.</p>
+    </div>
 
 
 
