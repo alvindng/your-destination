@@ -1,6 +1,11 @@
 .jumbotron{
   text-align: center;
 }
+
 #results {
   display: none;
+}
+
+body {
+  background-image: image(img/background.jpg);
 }

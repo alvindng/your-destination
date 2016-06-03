@@ -10,6 +10,7 @@
   <title>Vacation Recommendations</title>
 </head>
 <body>
+
   <div class="container">
     <div class="jumbotron">
 
@@ -28,8 +29,8 @@
               <h4 class="modal-title">Find Your Dream Vacation</h4>
             </div>
             <div class="modal-body">
-              <label id="name" for="name">Enter Your Name:</label>
-              <input type="text" name="name" placeholder="Jane/John Smith">
+              <label for="name">Enter Your Name:</label>
+              <input id="name" class="form-control" type="text" name="name" placeholder="Jane/John Smith">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -48,12 +49,12 @@
             </div>
             <div class="modal-body">
               <p>How important is cost when planning a vacation?</p>
-              <select class="form-control" id="beverage">
-                <option value="1">Extremely Important</option>
-                <option value="2">Very Important</option>
-                <option value="3">Moderately Important</option>
-                <option value="4">Slightly Important</option>
-                <option value="5">Not at all Important</option>
+              <select class="form-control" id="cost">
+                <option value="2">Extremely Important</option>
+                <option value="1">Very Important</option>
+                <option value="0">Moderately Important</option>
+                <option value="-1">Slightly Important</option>
+                <option value="-2">Not at all Important</option>
               </select>
 
             </div>
@@ -75,14 +76,13 @@
             </div>
             <div class="modal-body">
               <p>How important is safety when planning a vacation?</p>
-              <select class="form-control" id="beverage">
-                <option value="1">Extremely Important</option>
-                <option value="2">Very Important</option>
-                <option value="3">Moderately Important</option>
-                <option value="4">Slightly Important</option>
-                <option value="5">Not at all Important</option>
+              <select class="form-control" id="safety">
+                <option value="2">Extremely Important</option>
+                <option value="1">Very Important</option>
+                <option value="0">Moderately Important</option>
+                <option value="-1">Slightly Important</option>
+                <option value="-2">Not at all Important</option>
               </select>
-
 
             </div>
             <div class="modal-footer">
@@ -103,12 +103,12 @@
             </div>
             <div class="modal-body">
               <p>How important is food selection when planning a vacation?</p>
-              <select class="form-control" id="beverage">
-                <option value="1">Extremely Important</option>
-                <option value="2">Very Important</option>
-                <option value="3">Moderately Important</option>
-                <option value="4">Slightly Important</option>
-                <option value="5">Not at all Important</option>
+              <select class="form-control" id="food">
+                <option value="2">Extremely Important</option>
+                <option value="1">Very Important</option>
+                <option value="0">Moderately Important</option>
+                <option value="-1">Slightly Important</option>
+                <option value="-2">Not at all Important</option>
               </select>
 
             </div>
@@ -131,12 +131,12 @@
             <div class="modal-body">
               <div class="radio">
                 <p>How important are activities when planning a vacation?</p>
-                <select class="form-control" id="beverage">
-                  <option value="1">Extremely Important</option>
-                  <option value="2">Very Important</option>
-                  <option value="3">Moderately Important</option>
-                  <option value="4">Slightly Important</option>
-                  <option value="5">Not at all Important</option>
+                <select class="form-control" id="activities">
+                  <option value="2">Extremely Important</option>
+                  <option value="1">Very Important</option>
+                  <option value="0">Moderately Important</option>
+                  <option value="-1">Slightly Important</option>
+                  <option value="-2">Not at all Important</option>
                 </select>
               </div>
             </div>
@@ -176,25 +176,37 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal5" data-dismiss="modal">Previous</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="surveySubmit" type="submit" class="btn btn-primary">Submit</button>
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
 
-
-
     </form>
-
 
     <div id="results">
       <h1>Your Destination:</h1>
-      <p>One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.</p>
+      <p> Hurray, <span class="name"><span></p>
+      <p> You're going to <span class="location"></span></p>
+    </div>
+    <!-- <div id="results2">
+      <h1>Your Destination:</h1>
+      <p> Hurray, <span class="name"><span>! You're going to Ireland!</p>
     </div>
 
+    <div id="results3">
+      <h1>Your Destination:</h1>
+      <p> Hurray, <span class="name"><span>! You're going to Spain!
 
+    <div id="results4">
+      <h1>Your Destination:</h1>
+      <p> Hurray, <span class="name"><span>! You're going to Hong Kong!</p>
+    </div>
 
-
+    <div id="results5">
+      <h1>Your Destination:</h1>
+      <p> Hurray, <span class="name"><span>! You're going to Germany!</p>
+    </div> -->
   </div> <!-- end container -->
 
 
