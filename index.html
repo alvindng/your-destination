@@ -15,8 +15,8 @@
     <div class="jumbotron">
 
       <h1>Destination Finder</h1>
-      <p>Find your next vacation spot by taking my survey. Click the button below to get started.</p>
-      <button class="btn btn-success btn-lrg" type="button" name="button" data-target="#myModal1" data-toggle="modal">Get Started</button>
+      <p>Find your next vacation spot by clicking on the button below:</p>
+      <button class="btn btn-success btn-lrg" type="button" name="button" data-target="#myModal1" data-toggle="modal">Take Me Away</button>
     </div>
 
     <form id="myForm">
@@ -50,11 +50,11 @@
             <div class="modal-body">
               <p>How important is cost when planning a vacation?</p>
               <select class="form-control" id="cost">
-                <option value="2">Extremely Important</option>
-                <option value="1">Very Important</option>
+                <option value="-2">Extremely Important</option>
+                <option value="-1">Very Important</option>
                 <option value="0">Moderately Important</option>
-                <option value="-1">Slightly Important</option>
-                <option value="-2">Not at all Important</option>
+                <option value="1">Slightly Important</option>
+                <option value="2">Not at all Important</option>
               </select>
 
             </div>
@@ -75,13 +75,13 @@
               <h4 class="modal-title">Find Your Dream Vacation</h4>
             </div>
             <div class="modal-body">
-              <p>How important is safety when planning a vacation?</p>
+              <p>How often do you like to go out of your comfort zone?</p>
               <select class="form-control" id="safety">
-                <option value="2">Extremely Important</option>
-                <option value="1">Very Important</option>
-                <option value="0">Moderately Important</option>
-                <option value="-1">Slightly Important</option>
-                <option value="-2">Not at all Important</option>
+                <option value="-2">All the time</option>
+                <option value="-1">Once a week or so</option>
+                <option value="0">Very rarely</option>
+                <option value="1">Only when I have to</option>
+                <option value="2">Never</option>
               </select>
 
             </div>
@@ -102,7 +102,7 @@
               <h4 class="modal-title">Find Your Dream Vacation</h4>
             </div>
             <div class="modal-body">
-              <p>How important is food selection when planning a vacation?</p>
+              <p>How important is food selection/variety when planning a vacation?</p>
               <select class="form-control" id="food">
                 <option value="2">Extremely Important</option>
                 <option value="1">Very Important</option>
@@ -130,13 +130,13 @@
             </div>
             <div class="modal-body">
               <div class="radio">
-                <p>How important are activities when planning a vacation?</p>
+                <p>What type of film would you like to star in?</p>
                 <select class="form-control" id="activities">
-                  <option value="2">Extremely Important</option>
-                  <option value="1">Very Important</option>
-                  <option value="0">Moderately Important</option>
-                  <option value="-1">Slightly Important</option>
-                  <option value="-2">Not at all Important</option>
+                  <option value="2">Action</option>
+                  <option value="1">Comedy</option>
+                  <option value="0">Romance</option>
+                  <option value="-1">Drama</option>
+                  <option value="-2">Biography/Documentary</option>
                 </select>
               </div>
             </div>

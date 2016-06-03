@@ -11,15 +11,6 @@ $('form').submit(function(event){
 
   if (result >= -8 && result <= -4){
     $("img").hide();
-    $(".destination").text("Paris");
-    $(".name").text(nameInput);
-    $("#results").fadeIn();
-    $(".location").text("Paris!");
-    $("#paris").fadeIn();
-  }
-
-  else if (result > -4 && result < 0){
-    $("img").hide();
     $(".destination").text("Brazil");
     $(".name").text(nameInput);
     $("#results").fadeIn();
@@ -27,13 +18,22 @@ $('form').submit(function(event){
     $("#brazil").fadeIn();
   }
 
-  else if (result === 0){
+  else if (result > -4 && result < 0){
     $("img").hide();
     $(".destination").text("Austria");
     $(".name").text(nameInput);
     $("#results").fadeIn();
-    $(".location").text("Austria!");
+    $(".location").text("Austia!");
     $("#austria").fadeIn();
+  }
+
+  else if (result === 0){
+    $("img").hide();
+    $(".destination").text("Paris");
+    $(".name").text(nameInput);
+    $("#results").fadeIn();
+    $(".location").text("Paris!");
+    $("#paris").fadeIn();
   }
 
   else if (result >0 && result <= 4){
