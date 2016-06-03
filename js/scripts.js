@@ -53,5 +53,6 @@ $('form').submit(function(event){
     $(".location").text("Tokyo!");
     $("#tokyo").fadeIn();
   }
-
+  $('#myModal6').modal('hide');
+      return false;
 });
