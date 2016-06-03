@@ -14,12 +14,12 @@
   <div class="container">
     <div class="jumbotron">
 
-    <h1>Destination Finder</h1>
-    <p>Find your next vacation spot by taking my survey. Click the button below to get started.</p>
-    <button class="btn btn-success btn-lrg" type="button" name="button" data-target="#myModal1" data-toggle="modal">Get Started</button>
-  </div>
+      <h1>Destination Finder</h1>
+      <p>Find your next vacation spot by taking my survey. Click the button below to get started.</p>
+      <button class="btn btn-success btn-lrg" type="button" name="button" data-target="#myModal1" data-toggle="modal">Get Started</button>
+    </div>
 
-    <form>
+    <form id="myForm">
 
       <div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -170,8 +170,6 @@
                   No
                 </label>
               </div>
-
-
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -187,49 +185,29 @@
     <div id="results">
       <h1>Your Destination: <span class="destination"></span></h1>
       <p> Hurray, <span class="name"><span>!</p>
-      <p> You're going to <span class="location"></span>!</p>
-      <div class="img-responsive">
-        <img id="paris" src="img/paris.jpg" alt="Paris" />
+        <p> You're going to <span class="location"></span>!</p>
+        <div class="img-responsive">
+          <img id="paris" src="img/paris.jpg" alt="Paris" />
+        </div>
+        <div class="img-responsive">
+          <img id="tokyo" src="img/tokyo.jpg" alt="Tokyo" />
+        </div>
+        <div class="img-responsive">
+          <img id="barcelona" src="img/barcelona.jpg" alt="Barcelona" />
+        </div>
+        <div class="img-responsive">
+          <img id="austria" src="img/austria.jpg" alt="Austria" />
+        </div>
+        <div class="img-responsive">
+          <img id="brazil" src="img/brazil.jpg" alt="Brazil" />
+        </div>
       </div>
-      <div class="img-responsive">
-        <img id="tokyo" src="img/tokyo.jpg" alt="Tokyo" />
-      </div>
-      <div class="img-responsive">
-        <img id="barcelona" src="img/barcelona.jpg" alt="Barcelona" />
-      </div>
-      <div class="img-responsive">
-        <img id="austria" src="img/austria.jpg" alt="Austria" />
-      </div>
-      <div class="img-responsive">
-        <img id="brazil" src="img/brazil.jpg" alt="Brazil" />
-      </div>
-    </div>
+    </div> <!-- end container -->
 
 
-    <!-- <div id="results2">
-      <h1>Your Destination:</h1>
-      <p> Hurray, <span class="name"><span>! You're going to Ireland!</p>
-    </div>
-
-    <div id="results3">
-      <h1>Your Destination:</h1>
-      <p> Hurray, <span class="name"><span>! You're going to Spain!
-
-    <div id="results4">
-      <h1>Your Destination:</h1>
-      <p> Hurray, <span class="name"><span>! You're going to Hong Kong!</p>
-    </div>
-
-    <div id="results5">
-      <h1>Your Destination:</h1>
-      <p> Hurray, <span class="name"><span>! You're going to Germany!</p>
-    </div> -->
-  </div> <!-- end container -->
-
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="js/scripts.js" charset="utf-8"></script>
-</body>
-</html>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </body>
+  </html>
