@@ -2,23 +2,20 @@
   text-align: center;
   background-color: rgba(125, 201, 227, 0.5);
   color: white;
-tx}
-.jumbotron p{
-color: rgba(87, 100, 105, 0.8);
 }
-
+.jumbotron p{
+  color: rgba(87, 100, 105, 0.8);
+}
 #results {
   display: none;
   background-color: rgba(125, 201, 227, 0.5);
   text-align: center;
   color: white;
 }
-
 #results p{
   font-size: 25pt;
   color: rgba(87, 100, 105, 0.8);
 }
-
 img {
   display: none;
   max-width: 500px;
