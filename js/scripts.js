@@ -16,43 +16,35 @@ $('form').submit(function(event){
     $("#results").fadeIn();
     $(".location").text("Brazil!");
     $("#brazil").fadeIn();
-  }
-
-  else if (result > -4 && result < 0){
+  } else if (result > -4 && result < 0){
     $("img").hide();
     $(".destination").text("Austria");
     $(".name").text(nameInput);
     $("#results").fadeIn();
-    $(".location").text("Austia!");
+    $(".location").text("Austria!");
     $("#austria").fadeIn();
-  }
-
-  else if (result === 0){
+  } else if (result === 0){
     $("img").hide();
     $(".destination").text("Paris");
     $(".name").text(nameInput);
     $("#results").fadeIn();
     $(".location").text("Paris!");
     $("#paris").fadeIn();
-  }
-
-  else if (result >0 && result <= 4){
+  } else if (result >0 && result <= 4){
     $("img").hide();
     $(".destination").text("Barcelona");
     $(".name").text(nameInput);
     $("#results").fadeIn();
     $(".location").text("Barcelona!");
     $("#barcelona").fadeIn();
-  }
-
-  else if (result >4 && result <= 8) {
+  } else if (result >4 && result <= 8) {
     $("img").hide();
     $(".destination").text("Tokyo");
     $(".name").text(nameInput);
     $("#results").fadeIn();
     $(".location").text("Tokyo!");
     $("#tokyo").fadeIn();
-  }
+  } else {};
   $('#myModal6').modal('hide');
       return false;
 });
